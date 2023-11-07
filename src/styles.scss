@@ -8,6 +8,10 @@ body,
     padding: 0;
 }
 
+body {
+    background-color: rgba(143, 128, 174, 0.466);
+}
+
 @font-face {
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "MagnoliaScript";

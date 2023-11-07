@@ -1,18 +1,20 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { CardComponent } from "./card/card.component";
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    imports: [CommonModule, RouterOutlet, CardComponent]
 })
 export class AppComponent implements OnInit {
   title = 'portfolio-app';
   listLetters = "Hello, I'm World".split('')
   timeStep = 500
+  items = [1, 2, 3, 4]
 
 
   constructor(private renderer: Renderer2) {
